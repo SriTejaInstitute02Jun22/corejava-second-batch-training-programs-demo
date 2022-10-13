@@ -18,7 +18,25 @@ public class RelationalOperators {
 		System.out.println("I==K = "+(i==k));
 		System.out.println("I!=K = "+(i!=k));
 		
+		A a = new A();
+		B b = new B();
+		
+	
+		System.out.println(a instanceof B);
+		
+		System.out.println(b instanceof A);
 		
 	}
 
+}
+class A{
+	public void show() {
+		System.out.println("Hi A class");
+	}
+}
+
+class B extends A{
+	public  void display() {
+		System.out.println("Hi B class");
+	}
 }
