@@ -88,6 +88,13 @@ public class Employe {
 	}
 	
 	//toString() method
+	@Override
+	public String toString() {
+		return "Employe [empId=" + empId + ", empName=" + empName + ", empSalary=" + empSalary + ", email=" + email
+				+ ", mobile=" + mobile + ", empDept=" + empDept + ", empAddress=" + empAddress + "]";
+	}
+	
+	
 	
 	
 	
