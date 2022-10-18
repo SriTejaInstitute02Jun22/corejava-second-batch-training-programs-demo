@@ -1,5 +1,7 @@
 package com.sriteja.bean;
 
+import com.sriteja.pojo.PermanantAddress;
+
 /**
  *  Employee bean class, it contain employee details
  * **/
@@ -14,23 +16,15 @@ public class Employe {
 	private String empDept;
 	private String empAddress;
 	
+	//adding Address details 
+	private PermanantAddress permanantAddress;
+	
 	//no argument constructor
 	public Employe() {
 		
 	}
-	//parameterized constructor
-	public Employe(int empId, String empName, double empSalary, String email, int mobile, String empDept,
-			String empAddress) {
-		this.empId = empId;
-		this.empName = empName;
-		this.empSalary = empSalary;
-		this.email = email;
-		this.mobile = mobile;
-		this.empDept = empDept;
-		this.empAddress = empAddress;
-	}
 
-	//setter & getter method
+	//setter and getter methods
 	public int getEmpId() {
 		return empId;
 	}
@@ -86,15 +80,22 @@ public class Employe {
 	public void setEmpAddress(String empAddress) {
 		this.empAddress = empAddress;
 	}
-	
+
+	public PermanantAddress getPermanantAddress() {
+		return permanantAddress;
+	}
+
+	public void setPermanantAddress(PermanantAddress permanantAddress) {
+		this.permanantAddress = permanantAddress;
+	}
+
 	//toString() method
 	@Override
 	public String toString() {
 		return "Employe [empId=" + empId + ", empName=" + empName + ", empSalary=" + empSalary + ", email=" + email
-				+ ", mobile=" + mobile + ", empDept=" + empDept + ", empAddress=" + empAddress + "]";
+				+ ", mobile=" + mobile + ", empDept=" + empDept + ", empAddress=" + empAddress + ", permanantAddress="
+				+ permanantAddress + "]";
 	}
-	
-	
 	
 	
 	

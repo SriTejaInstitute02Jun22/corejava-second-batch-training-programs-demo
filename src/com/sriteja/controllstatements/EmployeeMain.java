@@ -9,10 +9,9 @@ public class EmployeeMain {
 
 	public static void main(String[] args) {
 
-		Employe empResponse = setEmployeeDetails();
-		Object response = getEmployeeByEmpEmailAndEmpId(empResponse);
+		Employe empResponse = setEmployeeDetails(); //method calling
+		Object response = getEmployeeByEmpEmailAndEmpId(empResponse);//method calling
 		System.out.println("Response :: "+response);
-		
 	}
 
 	/**
