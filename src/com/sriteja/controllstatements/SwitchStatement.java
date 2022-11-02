@@ -6,11 +6,11 @@ public class SwitchStatement {
 
 		int i = 5;
 		int j = 10;
-		display(i,j);
+		display(i,j);	//method calling
 		
 		String myName = "SriTeja";
-		show(myName);
-		dispalyMyName(myName);
+		show(myName);	//method calling
+		dispalyMyName(myName);	//method calling
 	}
 	
 	public static void display(int i, int j) {

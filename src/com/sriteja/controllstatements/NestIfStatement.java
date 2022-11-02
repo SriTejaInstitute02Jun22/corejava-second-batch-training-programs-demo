@@ -10,8 +10,8 @@ public class NestIfStatement {
 		
 		new NestIfStatement().displayEmployeDetails(emp); //method calling
 		
-	//	NestIfStatement nestIfStatement = new NestIfStatement();
-	//	nestIfStatement.displayEmployeDetails(emp);
+		//NestIfStatement nestIfStatement = new NestIfStatement();
+		//nestIfStatement.displayEmployeDetails(emp);
 		
 
 		
