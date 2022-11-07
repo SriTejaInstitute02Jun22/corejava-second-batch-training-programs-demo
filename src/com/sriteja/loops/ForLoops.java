@@ -19,6 +19,13 @@ public class ForLoops {
 		System.out.println();
 		new ForLoops().display();
 		
+		System.out.println();
+		System.out.println();
+		//decrement exaples
+		for(int j=4; j>0; j--) {
+			System.out.println("Hi."+j);
+		}
+		
 	}
 	
 	public void display() {
