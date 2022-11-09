@@ -8,7 +8,7 @@ public class CompanyMain {
 	String myName = "Sri Teja";
 	int myId =  244;
 	
-	public void setCompamyDetails() {
+	public void setCompamyDetails() {			//method creation and implementation
 		
 		//creating the Company Object
 		Company company = new Company();
@@ -37,6 +37,16 @@ public class CompanyMain {
 		
 		System.out.println("Company Name = "+companyDetails.getCompanyName());
 		System.out.println("Company Email = "+companyDetails.getComapnyEmail());
+	}
+	
+	
+	//main method
+	public static void main(String args[]) {
+		
+		//CompanyMain 
+		CompanyMain companyMain = new CompanyMain();
+		//we cann't accept any values  or properties or methods from the child class to parent class
+		//System.out.println("My DOB from Chaild Class = "+companyMain.myDOB);
 	}
 	
 	
