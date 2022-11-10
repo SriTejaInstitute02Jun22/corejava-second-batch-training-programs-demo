@@ -8,6 +8,11 @@ public class CompanyMain {
 	String myName = "Sri Teja";
 	int myId =  244;
 	
+	//crating the Constructor
+	public CompanyMain() {
+		System.out.println("CompanyMain Constructor....");
+	}
+	
 	public void setCompamyDetails() {			//method creation and implementation
 		
 		//creating the Company Object

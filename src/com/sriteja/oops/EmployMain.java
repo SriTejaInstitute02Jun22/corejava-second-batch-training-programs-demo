@@ -8,6 +8,11 @@ public class EmployMain extends CompanyMain{
 
 	String myDOB = "01-May-2011"; // instance 
 	
+	//creating the Constructor
+	public EmployMain() {
+		System.out.println("EmployeMain Constructor............");
+	}
+	
 	public static void main(String[] args) {
 
 	/*	CompanyMain companyMain = new CompanyMain();	//parent class object creation
