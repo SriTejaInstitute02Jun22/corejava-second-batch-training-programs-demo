@@ -2,7 +2,7 @@ package com.sriteja.oops;
 
 import com.sriteja.bean.Company;
 
-public class CompanyMain {
+public class CompanyMain extends CompanyHeadOfficeDetails{
 
 	//instance variable
 	String myName = "Sri Teja";
@@ -10,7 +10,7 @@ public class CompanyMain {
 	
 	//crating the Constructor
 	public CompanyMain() {
-		System.out.println("CompanyMain Constructor....");
+		System.out.println("Parent Class--------CompanyMain Constructor....");
 	}
 	
 	public void setCompamyDetails() {			//method creation and implementation

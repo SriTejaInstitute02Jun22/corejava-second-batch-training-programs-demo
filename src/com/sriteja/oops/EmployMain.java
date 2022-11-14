@@ -10,7 +10,7 @@ public class EmployMain extends CompanyMain{
 	
 	//creating the Constructor
 	public EmployMain() {
-		System.out.println("EmployeMain Constructor............");
+		System.out.println("Child Class---------EmployeMain Constructor............");
 	}
 	
 	public static void main(String[] args) {
@@ -39,6 +39,11 @@ public class EmployMain extends CompanyMain{
 		
 		//child class method calling
 		new EmployMain().show();
+		
+		System.out.println();
+		System.out.println("===================");
+		//get the data from CompanyHeadOfficeDetails
+		employMain.getHeadOffficeAddress();
 	}
 	
 	public void show() {

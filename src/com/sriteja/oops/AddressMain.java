@@ -14,6 +14,12 @@ public class AddressMain {
 		
 		Company companyAddress = addressDetils.getMyCompanyAddress();
 		System.out.println("Company Address = "+companyAddress);
+		
+		System.out.println();
+		System.out.println("================================");
+		//Object creation for CompanyInterface
+		CompanyInterface companyInterface = new AddressInterfaceImpl(); //object creating for interface indirectly.
+		companyInterface.getCompanyAddressDetails();
 	}
 
 }

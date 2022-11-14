@@ -6,7 +6,7 @@ import com.sriteja.bean.Company;
 /**
  * this class is going to implement all address interface methods.
  * */
-public class AddressInterfaceImpl implements AddressInterface{
+public class AddressInterfaceImpl implements AddressInterface, CompanyInterface{
 
 	String stateName = "Telangana";
 	String countryName = "India";
@@ -42,6 +42,20 @@ public class AddressInterfaceImpl implements AddressInterface{
 		
 		
 		return company;
+	}
+
+	@Override
+	public void getCompanyAddressDetails() {
+		
+		Company company = new Company();
+		company.setCompanyName("Tech Mahendra");
+		company.setComapnyEmail("sriteja@techmahendra.com");
+		company.setCompanyMobile("890384343");
+		company.setCompanyAddress("1-12/A, Railway Station");
+		company.setCompanyLocation("Bangalore");
+		System.out.println("CompanyInterface method");
+		System.out.println(company);
+		
 	}
 
 }
