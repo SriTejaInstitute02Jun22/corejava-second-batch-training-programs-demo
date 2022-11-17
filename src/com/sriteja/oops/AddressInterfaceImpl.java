@@ -58,4 +58,10 @@ public class AddressInterfaceImpl implements AddressInterface, CompanyInterface{
 		
 	}
 
+	@Override
+	public Company getCompanyDetails() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

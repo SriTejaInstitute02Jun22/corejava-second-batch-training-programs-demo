@@ -71,8 +71,14 @@ public class EmployeeDetailsService implements EmployeeInterface{
 	@Override
 	public Company getCompanyDetails() {					//method implementation or method body
 		//creating Company object
+		Company company = new Company();
+		company.setCompanyName("IBM");
+		company.setComapnyEmail("ibm@ibm.com");
+		company.setCompanyMobile("+9183234242");
+		company.setCompanyAddress("1-20/21, Hinjawadi, Pune");
+		company.setCompanyLocation("Pune");
 		
-		return null;
+		return company;
 	}
 
 }

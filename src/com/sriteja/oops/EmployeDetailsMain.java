@@ -9,19 +9,43 @@ import com.sriteja.bean.Employe;
 public class EmployeDetailsMain {
 
 	public static void main(String[] args) {
-
-		//creating the EmployeeInterface object with EmployeeDetailsService reference class
-		//calling the below methods
-		//public Employe getEmployeeDetails(int empId, String empEmail);
 		
+		int empId = 3452;
+		String empEmail = "sriteja@gmail.com";
 		
-		//public String getEmployeeDepartment(int empId);	
+		//creating the EmployeeInterface object with EmployeeDetailsService implementation class
+		EmployeeInterface employeeInterface = new EmployeeDetailsService();
+		System.out.println();
+		/**
+		 * get the Employee Details based on empId and empEmail
+		 * @param empId		- employee id
+		 * @param empEmail 	- employee email id
+		 * @return employee	- employee object is return
+		 * */
+		Employe employee = employeeInterface.getEmployeeDetails(empId, empEmail);	//method calling
+		System.out.println("Employe Details-------------> "+employee);
 		
+		System.out.println();
+		/**
+		 * get Employee Department based on empId
+		 * @param empId		- employee id
+		 * */
+		String employeeDepartment = employeeInterface.getEmployeeDepartment(empId);	//method calling
+		System.out.println("Employee Department = "+employeeDepartment);
 		
-		//public void getCompanyAddressDetails();
+		System.out.println();
+		/**
+		 * get Company Address Details
+		 * */
+		employeeInterface.getCompanyAddressDetails();	//method calling
 		
-		
-		//public Company getCompanyDetails();
+		System.out.println();
+		/**
+		 * get the Company Details
+		 * @return company	- company object is return
+		 * */
+		Company company = employeeInterface.getCompanyDetails();
+		System.out.println("Compay Details ----------> "+company);
 	}
 
 }
