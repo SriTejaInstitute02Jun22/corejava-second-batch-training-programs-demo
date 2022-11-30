@@ -1,7 +1,5 @@
 package com.sriteja.oops;
 
-import com.sriteja.bean.Company;
-
 /**
  * crating the interface
  * 
@@ -12,16 +10,15 @@ import com.sriteja.bean.Company;
  * but using implementation class we can create the object for this interface.
  *
  * **/
-public interface CompanyInterface {
+public interface DemoInterface {
 
-	/***
-	 * get the company address details
-	 */
-	public void getCompanyAddressDetails();
+	//creating the variable
+	public static final String MYSCHOOLNAME = "Z.P.H.School";
 	
-	/***
-	 * get the company details
-	 */
-	public Company getCompanyDetails();
+	//abstract method creation
+	public void getAccountNumber();
+	
+	String showBankName(); 
+	
 	
 }
