@@ -18,7 +18,7 @@ public interface DemoInterface {
 	//abstract method creation
 	public void getAccountNumber();
 	
-	String showBankName(); 
+	String getBankName(); 
 	
 	
 }
