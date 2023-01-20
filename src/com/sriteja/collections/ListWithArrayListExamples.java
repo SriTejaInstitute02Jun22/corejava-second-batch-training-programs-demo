@@ -16,6 +16,10 @@ public class ListWithArrayListExamples {
 		List<Integer> listOfStudentIds = getListOfStudentIds();
 		System.out.println("List Of My Student ID's = "+listOfStudentIds);
 		
+		//get the data from list object based on index number
+		System.out.println("Get the 4th index data from the list = "+listOfStudentIds.get(3));
+		
+		
 	}
 	
 	public static List<Integer> getListOfStudentIds(){
@@ -26,14 +30,14 @@ public class ListWithArrayListExamples {
 		 * **/
 		//creating the List object 
 		List<Integer> listOfIds = new ArrayList<>();
-		listOfIds.add(10);
-		listOfIds.add(23);
-		listOfIds.add(5);
-		listOfIds.add(4);
-		listOfIds.add(null);
-		listOfIds.add(18);
-		listOfIds.add(null);
-		listOfIds.add(23);
+		listOfIds.add(10);//index number [0]
+		listOfIds.add(23);//[1]
+		listOfIds.add(5);//[2]
+		listOfIds.add(40);//[3]
+		listOfIds.add(null);//[4]
+		listOfIds.add(18);//[5]
+		listOfIds.add(null);//[6]
+		listOfIds.add(23);//[7]
 		
 		return listOfIds;
 		
