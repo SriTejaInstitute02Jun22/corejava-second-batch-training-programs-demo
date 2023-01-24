@@ -2,6 +2,7 @@ package com.sriteja.collections;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class SetWithHastSetExamples {
 
@@ -9,6 +10,11 @@ public class SetWithHastSetExamples {
 		
 		Set<String> companyNames = getSetOfCompanyNames(); //method calling
 		System.out.println("Set of Company Names ===="+companyNames);
+		
+		//TreeSet
+		Set<Integer> employIds = getEmployeIds();
+		System.out.println("Employee Ids in accending order ========="+employIds);
+		
 	}
 	
 	//method creation
@@ -32,5 +38,19 @@ public class SetWithHastSetExamples {
 		
 	}
 	
+	
+	//TreeSet impl
+	public static Set<Integer> getEmployeIds(){
+		
+		//creating the set object using treeset
+		Set<Integer> empIds = new TreeSet<>();
+		empIds.add(3);
+		empIds.add(5);
+		empIds.add(1);
+		empIds.add(2);
+		empIds.add(4);
+		
+		return empIds;
+	}
 
 }
